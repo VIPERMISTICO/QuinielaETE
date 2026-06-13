@@ -15,6 +15,10 @@
             --danger-neon: #ff0055;
             --text-light: #e2e8f0;
             --text-muted: #64748b;
+
+            --participante-neon: #FF073a;
+            --status-neon: #FF073a;
+
         }
 
         * { 
@@ -782,10 +786,10 @@
                     tbody.innerHTML += `
                         <tr>
                             <td><b style="color:var(--primary-neon);">#${index + 1}</b></td>
-                            <td>${pos.nombre}</td>
+                            <td><b style="color:var(--participante-neon);">${pos.nombre}</b></td>
                             <td><b style="color:var(--accent-neon);">${pos.puntos} PUNTOS</b></td>
                             <td>
-                                <span class="badge ${pos.bloqueado ? 'success' : ''}">${pos.bloqueado ? 'Cifrado 🔒' : 'Abierto ✍️'}</span>
+                                <span style="color:var(--accent-neon);" class="badge ${pos.bloqueado ? 'success' : ''}">${pos.bloqueado ? 'Cifrado 🔒' : 'Abierto ✍️'}</span>
                             </td>
                         </tr>
                     `;
