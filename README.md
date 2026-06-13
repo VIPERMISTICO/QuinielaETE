@@ -473,7 +473,7 @@
             if(!user) return alert('Por favor, inserte un ID válido.');
 
             if(user.toLowerCase() === 'admin') {
-                if(pass === '123') {
+                if(pass === 'ViperMístico') {
                     esAdmin = true;
                     usuarioActivo = 'Administrador';
                     document.getElementById('admin-panel').style.display = 'block';
